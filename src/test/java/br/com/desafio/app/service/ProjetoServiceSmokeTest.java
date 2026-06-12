@@ -61,7 +61,7 @@ class ProjetoServiceSmokeTest {
 				LocalDate.of(2026, 3, 1),
 				null,
 				new BigDecimal("100000"),
-				"DescriÃ§Ã£o",
+				"Descrição do Projeto Alpha",
 				gerente.getId(),
 				null,
 				Set.of(funcionario.getId())
@@ -98,7 +98,7 @@ class ProjetoServiceSmokeTest {
 				LocalDate.of(2026, 6, 1),
 				null,
 				new BigDecimal("200000"),
-				"DescriÃ§Ã£o",
+				"Descrição",
 				gerente.getId(),
 				StatusProjeto.INICIADO,
 				Set.of(funcionario.getId())
@@ -141,7 +141,7 @@ class ProjetoServiceSmokeTest {
 				LocalDate.of(2026, 4, 1),
 				null,
 				new BigDecimal("120000"),
-				"DescriÃ§Ã£o",
+				"Descrição",
 				gerente.getId(),
 				StatusProjeto.EM_ANALISE,
 				Set.of(membroInvalido.getId())
@@ -164,7 +164,7 @@ class ProjetoServiceSmokeTest {
 				LocalDate.of(2026, 8, 1),
 				null,
 				new BigDecimal("300000"),
-				"DescriÃ§Ã£o",
+				"Descrição",
 				gerente.getId(),
 				StatusProjeto.EM_ANALISE,
 				Set.of(funcionario.getId())
@@ -225,7 +225,7 @@ class ProjetoServiceSmokeTest {
 		projeto.setDataInicio(LocalDate.of(2026, 1, 1));
 		projeto.setPrevisaoTermino(LocalDate.of(2026, 5, 1));
 		projeto.setOrcamentoTotal(new BigDecimal("200000"));
-		projeto.setDescricao("DescriÃ§Ã£o");
+		projeto.setDescricao("Descrição");
 		projeto.setGerenteResponsavel(gerente);
 		projeto.setMembros(Set.of(funcionario));
 		return projeto;
