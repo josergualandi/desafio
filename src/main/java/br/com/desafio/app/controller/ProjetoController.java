@@ -8,6 +8,8 @@ import br.com.desafio.app.service.ProjetoService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+
+import org.springdoc.core.annotations.ParameterObject;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
@@ -31,7 +33,7 @@ public class ProjetoController {
 	public ResponseEntity<Page<ProjetoResponseDTO>> listar(
 			@RequestParam(required = false) String nome,
 			@RequestParam(required = false) StatusProjeto status,
-			Pageable pageable
+			@ParameterObject Pageable pageable
 	) {
 		return ResponseEntity.ok(projetoService.listar(nome, status, pageable));
 	}
