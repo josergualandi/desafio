@@ -15,7 +15,7 @@ API Spring Boot para o desafio técnico de gerenciamento de portfólio de projet
 9. [Endpoints](#endpoints)
 10. [Exemplos de payload](#exemplos-de-payload)
 11. [Testes e cobertura](#testes-e-cobertura)
-12. [Troubleshooting](#troubleshooting)
+12. [Solução de possíveis problemas](#solucao-de-problemas)
 
 ## Visão geral
 
@@ -26,7 +26,7 @@ O projeto implementa:
 - Cálculo dinâmico de risco
 - Regras de alocação de membros
 - Relatório resumido do portfólio
-- API mockada para cadastro e consulta de membros externos
+- API mockada para cadastro e consulta de membros
 - Segurança com Basic Auth
 - Documentação com OpenAPI/Swagger
 - Testes unitários e validação de cobertura
@@ -170,7 +170,7 @@ Basic Auth configurado em memória:
 
 ## Endpoints
 
-### Membros externos (mock)
+### Membros (mock)
 
 - `POST /api/membros`
 - `GET /api/membros`
@@ -253,16 +253,12 @@ Relatório JaCoCo:
 
 Como abrir o relatório no Windows (a partir da pasta `backend-java`):
 
-```powershell
-start .\target\site\jacoco\index.html
-```
-
 Cobertura da última execução local:
 
 - Instruções: 79.33%
 - Linhas: 79.34%
 
-## Troubleshooting
+## solucao-de-problemas
 
 ### Erro ao subir com maven-clean-plugin dizendo que não consegue deletar jar
 
