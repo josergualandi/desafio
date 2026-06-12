@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5433/desafio_db}
+    username: ${SPRING_DATASOURCE_USERNAME:ceiuser}
+    password: ${SPRING_DATASOURCE_PASSWORD:ceipass}
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+app:
+  database:
+    auto-create: true
+    admin-database: postgres
+
+server:
+  port: 8082
