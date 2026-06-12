@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/externo/membros")
-@Tag(name = "Membros Externos Mock")
+@RequestMapping("/api/membros")
+@Tag(name = "Membros Mock")
 @RequiredArgsConstructor
 public class MembroExternoController {
 
