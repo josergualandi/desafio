@@ -258,7 +258,7 @@ Cobertura da última execução local:
 - Instruções: 79.33%
 - Linhas: 79.34%
 
-## solucao-de-problemas
+## Solução de possíveis problemas
 
 ### Erro ao subir com maven-clean-plugin dizendo que não consegue deletar jar
 
