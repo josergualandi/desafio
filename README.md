@@ -235,6 +235,12 @@ Rodar testes:
 mvn test
 ```
 
+Rodar testes + gerar relatório de cobertura JaCoCo:
+
+```powershell
+mvn test jacoco:report
+```
+
 Rodar validação completa (inclui check de cobertura):
 
 ```powershell
@@ -244,6 +250,17 @@ mvn verify
 Relatório JaCoCo:
 
 - `target/site/jacoco/index.html`
+
+Como abrir o relatório no Windows (a partir da pasta `backend-java`):
+
+```powershell
+start .\target\site\jacoco\index.html
+```
+
+Cobertura da última execução local:
+
+- Instruções: 79.33%
+- Linhas: 79.34%
 
 ## Troubleshooting
 
