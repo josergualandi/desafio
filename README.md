@@ -15,7 +15,7 @@ API Spring Boot para o desafio técnico de gerenciamento de portfólio de projet
 9. [Endpoints](#endpoints)
 10. [Exemplos de payload](#exemplos-de-payload)
 11. [Testes e cobertura](#testes-e-cobertura)
-12. [Solução de possíveis problemas](#solucao-de-problemas)
+12. [Solução para posiveis problemas](#solução-para-posiveis-problemas)
 
 ## Visão geral
 
@@ -26,7 +26,7 @@ O projeto implementa:
 - Cálculo dinâmico de risco
 - Regras de alocação de membros
 - Relatório resumido do portfólio
-- API mockada para cadastro e consulta de membros
+- API mockada para cadastro e consulta de membros externos
 - Segurança com Basic Auth
 - Documentação com OpenAPI/Swagger
 - Testes unitários e validação de cobertura
@@ -258,7 +258,7 @@ Cobertura da última execução local:
 - Instruções: 79.33%
 - Linhas: 79.34%
 
-## Solução de possíveis problemas
+## Solução para posiveis problemas
 
 ### Erro ao subir com maven-clean-plugin dizendo que não consegue deletar jar
 
