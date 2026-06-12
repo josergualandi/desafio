@@ -5,10 +5,10 @@ import br.com.desafio.app.domain.ClassificacaoRisco;
 import br.com.desafio.app.domain.Membro;
 import br.com.desafio.app.domain.Projeto;
 import br.com.desafio.app.domain.StatusProjeto;
-import br.com.desafio.app.dto.PortfolioResumoDTO;
-import br.com.desafio.app.dto.ProjetoRequestDTO;
-import br.com.desafio.app.dto.ProjetoResponseDTO;
-import br.com.desafio.app.dto.StatusResumoDTO;
+import br.com.desafio.app.dto.response.PortfolioResumoDTO;
+import br.com.desafio.app.dto.request.ProjetoRequestDTO;
+import br.com.desafio.app.dto.response.ProjetoResponseDTO;
+import br.com.desafio.app.dto.response.StatusResumoDTO;
 import br.com.desafio.app.exception.NotFoundException;
 import br.com.desafio.app.exception.RegraNegocioException;
 import br.com.desafio.app.mapper.ProjetoMapper;
@@ -251,3 +251,4 @@ public class ProjetoServiceImpl implements ProjetoService {
 		return Math.max(meses, 0);
 	}
 }
+

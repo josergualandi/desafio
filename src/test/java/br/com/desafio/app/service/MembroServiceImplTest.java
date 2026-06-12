@@ -2,10 +2,10 @@ package br.com.desafio.app.service;
 
 import br.com.desafio.app.domain.AtribuicaoMembro;
 import br.com.desafio.app.domain.Membro;
-import br.com.desafio.app.dto.MembroRequestDTO;
+import br.com.desafio.app.dto.request.MembroRequestDTO;
 import br.com.desafio.app.exception.NotFoundException;
 import br.com.desafio.app.repository.MembroRepository;
-import br.com.desafio.app.service.impl.MembroExternoServiceImpl;
+import br.com.desafio.app.service.impl.MembroServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -21,16 +21,16 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-class MembroExternoServiceImplTest {
+class MembroServiceImplTest {
 
     @Mock
     private MembroRepository membroRepository;
 
-    private MembroExternoServiceImpl service;
+    private MembroServiceImpl service;
 
     @BeforeEach
     void setUp() {
-        service = new MembroExternoServiceImpl(membroRepository);
+        service = new MembroServiceImpl(membroRepository);
     }
 
     @Test
@@ -90,3 +90,4 @@ class MembroExternoServiceImplTest {
         assertEquals(2, lista.size());
     }
 }
+

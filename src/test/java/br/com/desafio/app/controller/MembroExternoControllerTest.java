@@ -1,9 +1,9 @@
 package br.com.desafio.app.controller;
 
 import br.com.desafio.app.domain.AtribuicaoMembro;
-import br.com.desafio.app.dto.MembroRequestDTO;
-import br.com.desafio.app.dto.MembroResponseDTO;
-import br.com.desafio.app.service.MembroExternoService;
+import br.com.desafio.app.dto.request.MembroRequestDTO;
+import br.com.desafio.app.dto.response.MembroResponseDTO;
+import br.com.desafio.app.service.MembroService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -20,7 +20,7 @@ import static org.mockito.Mockito.when;
 class MembroExternoControllerTest {
 
     @Mock
-    private MembroExternoService membroExternoService;
+    private MembroService membroExternoService;
 
     private MembroExternoController controller;
 
@@ -67,3 +67,4 @@ class MembroExternoControllerTest {
         assertEquals(10L, result.getBody().id());
     }
 }
+

@@ -1,8 +1,8 @@
 package br.com.desafio.app.controller;
 
-import br.com.desafio.app.dto.MembroRequestDTO;
-import br.com.desafio.app.dto.MembroResponseDTO;
-import br.com.desafio.app.service.MembroExternoService;
+import br.com.desafio.app.dto.request.MembroRequestDTO;
+import br.com.desafio.app.dto.response.MembroResponseDTO;
+import br.com.desafio.app.service.MembroService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -18,7 +18,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class MembroExternoController {
 
-    private final MembroExternoService membroExternoService;
+    private final MembroService membroExternoService;
 
     @PostMapping
     public ResponseEntity<MembroResponseDTO> criar(@Valid @RequestBody MembroRequestDTO dto) {
@@ -35,3 +35,4 @@ public class MembroExternoController {
         return ResponseEntity.ok(membroExternoService.buscarPorId(id));
     }
 }
+

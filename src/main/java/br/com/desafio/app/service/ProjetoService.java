@@ -1,9 +1,9 @@
 package br.com.desafio.app.service;
 
 import br.com.desafio.app.domain.StatusProjeto;
-import br.com.desafio.app.dto.PortfolioResumoDTO;
-import br.com.desafio.app.dto.ProjetoRequestDTO;
-import br.com.desafio.app.dto.ProjetoResponseDTO;
+import br.com.desafio.app.dto.response.PortfolioResumoDTO;
+import br.com.desafio.app.dto.request.ProjetoRequestDTO;
+import br.com.desafio.app.dto.response.ProjetoResponseDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
@@ -21,3 +21,4 @@ public interface ProjetoService {
 
 	PortfolioResumoDTO gerarResumoPortfolio();
 }
+

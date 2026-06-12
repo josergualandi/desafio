@@ -3,8 +3,8 @@ package br.com.desafio.app.mapper;
 import br.com.desafio.app.domain.ClassificacaoRisco;
 import br.com.desafio.app.domain.Membro;
 import br.com.desafio.app.domain.Projeto;
-import br.com.desafio.app.dto.MembroResumoDTO;
-import br.com.desafio.app.dto.ProjetoResponseDTO;
+import br.com.desafio.app.dto.response.MembroResumoDTO;
+import br.com.desafio.app.dto.response.ProjetoResponseDTO;
 import org.springframework.stereotype.Component;
 
 import java.util.Comparator;
@@ -36,3 +36,4 @@ public class ProjetoMapper {
 		return new MembroResumoDTO(membro.getId(), membro.getNome(), membro.getAtribuicao());
 	}
 }
+

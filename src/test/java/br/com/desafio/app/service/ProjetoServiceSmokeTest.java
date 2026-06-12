@@ -5,7 +5,7 @@ import br.com.desafio.app.domain.ClassificacaoRisco;
 import br.com.desafio.app.domain.Membro;
 import br.com.desafio.app.domain.Projeto;
 import br.com.desafio.app.domain.StatusProjeto;
-import br.com.desafio.app.dto.ProjetoRequestDTO;
+import br.com.desafio.app.dto.request.ProjetoRequestDTO;
 import br.com.desafio.app.exception.RegraNegocioException;
 import br.com.desafio.app.mapper.ProjetoMapper;
 import br.com.desafio.app.repository.MembroRepository;
@@ -61,7 +61,7 @@ class ProjetoServiceSmokeTest {
 				LocalDate.of(2026, 3, 1),
 				null,
 				new BigDecimal("100000"),
-				"Descrição",
+				"DescriÃ§Ã£o",
 				gerente.getId(),
 				null,
 				Set.of(funcionario.getId())
@@ -98,7 +98,7 @@ class ProjetoServiceSmokeTest {
 				LocalDate.of(2026, 6, 1),
 				null,
 				new BigDecimal("200000"),
-				"Descrição",
+				"DescriÃ§Ã£o",
 				gerente.getId(),
 				StatusProjeto.INICIADO,
 				Set.of(funcionario.getId())
@@ -141,7 +141,7 @@ class ProjetoServiceSmokeTest {
 				LocalDate.of(2026, 4, 1),
 				null,
 				new BigDecimal("120000"),
-				"Descrição",
+				"DescriÃ§Ã£o",
 				gerente.getId(),
 				StatusProjeto.EM_ANALISE,
 				Set.of(membroInvalido.getId())
@@ -164,7 +164,7 @@ class ProjetoServiceSmokeTest {
 				LocalDate.of(2026, 8, 1),
 				null,
 				new BigDecimal("300000"),
-				"Descrição",
+				"DescriÃ§Ã£o",
 				gerente.getId(),
 				StatusProjeto.EM_ANALISE,
 				Set.of(funcionario.getId())
@@ -225,9 +225,10 @@ class ProjetoServiceSmokeTest {
 		projeto.setDataInicio(LocalDate.of(2026, 1, 1));
 		projeto.setPrevisaoTermino(LocalDate.of(2026, 5, 1));
 		projeto.setOrcamentoTotal(new BigDecimal("200000"));
-		projeto.setDescricao("Descrição");
+		projeto.setDescricao("DescriÃ§Ã£o");
 		projeto.setGerenteResponsavel(gerente);
 		projeto.setMembros(Set.of(funcionario));
 		return projeto;
 	}
 }
+

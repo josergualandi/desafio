@@ -1,4 +1,4 @@
-package br.com.desafio.app.dto;
+package br.com.desafio.app.dto.response;
 
 import br.com.desafio.app.domain.ClassificacaoRisco;
 import br.com.desafio.app.domain.StatusProjeto;

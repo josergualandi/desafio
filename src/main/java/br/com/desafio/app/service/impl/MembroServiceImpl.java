@@ -1,11 +1,11 @@
 package br.com.desafio.app.service.impl;
 
 import br.com.desafio.app.domain.Membro;
-import br.com.desafio.app.dto.MembroRequestDTO;
-import br.com.desafio.app.dto.MembroResponseDTO;
+import br.com.desafio.app.dto.request.MembroRequestDTO;
+import br.com.desafio.app.dto.response.MembroResponseDTO;
 import br.com.desafio.app.exception.NotFoundException;
 import br.com.desafio.app.repository.MembroRepository;
-import br.com.desafio.app.service.MembroExternoService;
+import br.com.desafio.app.service.MembroService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class MembroExternoServiceImpl implements MembroExternoService {
+public class MembroServiceImpl implements MembroService {
 
     private final MembroRepository membroRepository;
 
@@ -40,3 +40,4 @@ public class MembroExternoServiceImpl implements MembroExternoService {
                 .toList();
     }
 }
+

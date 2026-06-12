@@ -3,10 +3,10 @@ package br.com.desafio.app.controller;
 import br.com.desafio.app.domain.ClassificacaoRisco;
 import br.com.desafio.app.domain.StatusProjeto;
 import br.com.desafio.app.domain.AtribuicaoMembro;
-import br.com.desafio.app.dto.MembroResumoDTO;
-import br.com.desafio.app.dto.PortfolioResumoDTO;
-import br.com.desafio.app.dto.ProjetoRequestDTO;
-import br.com.desafio.app.dto.ProjetoResponseDTO;
+import br.com.desafio.app.dto.response.MembroResumoDTO;
+import br.com.desafio.app.dto.response.PortfolioResumoDTO;
+import br.com.desafio.app.dto.request.ProjetoRequestDTO;
+import br.com.desafio.app.dto.response.ProjetoResponseDTO;
 import br.com.desafio.app.service.ProjetoService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -142,3 +142,4 @@ class ProjetoControllerTest {
         );
     }
 }
+

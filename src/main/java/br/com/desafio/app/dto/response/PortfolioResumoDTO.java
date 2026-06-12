@@ -1,4 +1,4 @@
-package br.com.desafio.app.dto;
+package br.com.desafio.app.dto.response;
 
 import java.util.List;
 

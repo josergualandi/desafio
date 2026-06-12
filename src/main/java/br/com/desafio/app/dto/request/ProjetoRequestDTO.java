@@ -1,4 +1,4 @@
-package br.com.desafio.app.dto;
+package br.com.desafio.app.dto.request;
 
 import br.com.desafio.app.domain.StatusProjeto;
 import jakarta.validation.constraints.DecimalMin;

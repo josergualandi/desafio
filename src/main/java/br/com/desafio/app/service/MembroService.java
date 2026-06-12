@@ -1,11 +1,11 @@
 package br.com.desafio.app.service;
 
-import br.com.desafio.app.dto.MembroRequestDTO;
-import br.com.desafio.app.dto.MembroResponseDTO;
+import br.com.desafio.app.dto.request.MembroRequestDTO;
+import br.com.desafio.app.dto.response.MembroResponseDTO;
 
 import java.util.List;
 
-public interface MembroExternoService {
+public interface MembroService {
 
     MembroResponseDTO criar(MembroRequestDTO dto);
 
@@ -13,3 +13,4 @@ public interface MembroExternoService {
 
     List<MembroResponseDTO> listar();
 }
+

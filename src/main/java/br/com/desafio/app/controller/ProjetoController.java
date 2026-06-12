@@ -1,9 +1,9 @@
 package br.com.desafio.app.controller;
 
 import br.com.desafio.app.domain.StatusProjeto;
-import br.com.desafio.app.dto.PortfolioResumoDTO;
-import br.com.desafio.app.dto.ProjetoRequestDTO;
-import br.com.desafio.app.dto.ProjetoResponseDTO;
+import br.com.desafio.app.dto.response.PortfolioResumoDTO;
+import br.com.desafio.app.dto.request.ProjetoRequestDTO;
+import br.com.desafio.app.dto.response.ProjetoResponseDTO;
 import br.com.desafio.app.service.ProjetoService;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
@@ -57,3 +57,4 @@ public class ProjetoController {
 		return ResponseEntity.ok(projetoService.gerarResumoPortfolio());
 	}
 }
+
