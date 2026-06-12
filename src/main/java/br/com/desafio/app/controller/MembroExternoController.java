@@ -34,5 +34,6 @@ public class MembroExternoController {
     public ResponseEntity<MembroResponseDTO> buscarPorId(@PathVariable Long id) {
         return ResponseEntity.ok(membroExternoService.buscarPorId(id));
     }
+    
 }
 

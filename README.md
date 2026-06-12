@@ -172,9 +172,9 @@ Basic Auth configurado em memória:
 
 ### Membros externos (mock)
 
-- `POST /api/externo/membros`
-- `GET /api/externo/membros`
-- `GET /api/externo/membros/{id}`
+- `POST /api/membros`
+- `GET /api/membros`
+- `GET /api/membros/{id}`
 
 ### Projetos
 

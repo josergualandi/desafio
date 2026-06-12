@@ -28,16 +28,13 @@ import java.util.Arrays;
 import java.util.EnumSet;
 import java.util.Map;
 import java.util.Set;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
 public class ProjetoServiceImpl implements ProjetoService {
 
-	private static final Set<StatusProjeto> STATUS_ATIVOS =
-			EnumSet.complementOf(EnumSet.of(StatusProjeto.ENCERRADO, StatusProjeto.CANCELADO));
-
+	
 	private static final Set<StatusProjeto> STATUS_BLOQUEIAM_EXCLUSAO =
 			EnumSet.of(StatusProjeto.INICIADO, StatusProjeto.EM_ANDAMENTO, StatusProjeto.ENCERRADO);
 

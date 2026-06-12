@@ -8,7 +8,6 @@ import br.com.desafio.app.dto.response.ProjetoResponseDTO;
 import org.springframework.stereotype.Component;
 
 import java.util.Comparator;
-import java.util.List;
 
 @Component
 public class ProjetoMapper {
